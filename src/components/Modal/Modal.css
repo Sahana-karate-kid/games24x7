@@ -1,0 +1,245 @@
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 10px;
+  }
+  
+  .modal-container {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    overflow-y: auto;
+    position: relative;
+    animation: slideIn 0.3s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Header */
+  .gst-header {
+    background: rgba(142, 142, 142, 1);
+    max-height: 42px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    color: #fff;
+  }
+  
+  .close-btn {
+    font-size: 3rem;
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+
+  .bottom1{
+    width: 90%;
+    border-radius: 8px;
+    background-color: #FAFAFA;
+  }
+
+  .justify-spacebetween{
+    justify-content: space-between;
+  }
+
+
+  /* GST Info Section */
+  .gst-info {
+    border-color: #e4dfdf !important;
+    width: 90%;    
+    height: 90px;
+    margin-top: 10px;
+    border: 1px solid;    
+    border-radius: 8px;
+    font-size: small;
+  }
+
+  .Sub-section{
+    width: 100%;
+    height: 57%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .highlight-info {
+    width: 100%;
+    height: 39px;
+    background: linear-gradient(to right, #e8f7ff, #f0ffe4);
+    font-weight: bold;
+    border-radius: 0px 0px 8px 8px;
+    text-align: start;
+  }
+  
+  /* GST Benefits */
+  .gst-benefits {
+    background-color: #eef6ff;
+    text-align: center;
+    border-radius: 8px 8px 0px 0px;
+    padding: 10px;
+    width: 94%;
+  }
+  
+  .green {
+    color: #28a745;
+  }
+  
+  .red {
+    color: #dc3545;
+  }
+  
+  .font-small{
+    font-size: x-small;
+  }
+  /* GST Explanation */
+  .gst-works {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .pay-info h2 {
+    font-size: 2rem;
+    margin: 5px 0;
+  }
+  
+  .gst-breakdown {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    transform: translateY(-30px);
+  }
+  
+  .gst-box {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px 0px;
+    width: 128px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 47px;
+    transform: translateY(-20px);
+
+  }
+  .arrowright{
+    transform: scaleX(-1)!important;
+  }
+  
+  .gst-paid {
+    background-color: #e8ffe8;
+    border-radius: 8px;
+    padding: 10px;
+    border: #28a745 1px solid;
+    margin-bottom: 20px;
+    height: fit-content;
+    text-align: start;
+    position: relative;
+    overflow: hidden;
+    max-width: 70%;
+  }
+
+  .gst-wallet{
+    height: fit-content;
+    margin-top: 20px;
+  }
+
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .gst-breakdown {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .gst-box {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .modal-container {
+      padding: 15px;
+    }
+  
+    .gst-header h2 {
+      font-size: 1.2rem;
+    }
+  
+    .gst-wallet h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .flex-row{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .margin-top-10{
+    margin-top: 10px;
+}
+
+.margin-bottom-10{
+    margin-bottom: 10px;
+  }
+  
+  .font-large{
+    font-size: large;
+  }
+
+  .icon-svg {
+   padding: 10px;
+  }
+
+  .icon-bottom{
+    padding-right: 5px;
+  }
+
+  .grey{
+    color: #747474;
+  }
+
+  .confetti-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image stretches nicely */
+  }
+  
+  .caution{
+    padding: 14px;
+  }
+  .info-header{
+    padding: 10px 0px;
+  }
+
+  
