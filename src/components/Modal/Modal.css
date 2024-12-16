@@ -163,34 +163,7 @@
     height: fit-content;
     margin-top: 20px;
   }
-
   
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .gst-breakdown {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .gst-box {
-      width: 80%;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .modal-container {
-      padding: 15px;
-    }
-  
-    .gst-header h2 {
-      font-size: 1.2rem;
-    }
-  
-    .gst-wallet h2 {
-      font-size: 1.5rem;
-    }
-  }
-
   .flex-row{
     display: flex;
     flex-direction: row;
@@ -240,6 +213,20 @@
   }
   .info-header{
     padding: 10px 0px;
+    text-align: start;
   }
 
+  @media (max-width: 768px) {
+    .bottom3 {
+      flex-direction: column;
+      align-items: center;
+    }
+    .flippingarrow{
+      transform: rotate(90deg);
+    }
+    .gst-paid{
+      margin-bottom: 10px;
+    }
+  }
   
+ 

@@ -16,7 +16,6 @@ function Modal(props) {
   return (
     <div className="modal-overlay" onClick={handleClose}>
       <div className="modal-container" onClick={stopPropagation}>
-        {/* Header */}
         <div className="gst-header justify-spacebetween">
           <strong>GST? No Worries!</strong>
           <span className="close-btn" onClick={handleClose}>
@@ -24,9 +23,7 @@ function Modal(props) {
           </span>
         </div>
 
-        {/* Modal Content */}
         <div className="flex-column">
-          {/* GST Info Section */}
           <div className="gst-info">
             <div className="Sub-section">
               <img src={caution} className="caution"></img>
@@ -43,18 +40,15 @@ function Modal(props) {
             </div>
           </div>
 
-          {/* GST Benefits Section */}
           <div className="flex-column margin-top-10 margin-bottom-10 bottom1">
             <div className="gst-benefits flex-row justify-spacebetween">
               GST benefits earned so far{" "}
               <span className="green">₹1,10,000</span>
             </div>
 
-            {/* How GST Works */}
             <div className="gst-works">
               <h3>How GST on deposit works?</h3>
               <div className="flex-column">
-                {/* Pay Info */}
                 <div className="pay-info">
                   <div>You Pay</div>
                   <strong className="font-large">₹1000</strong>
@@ -68,7 +62,6 @@ function Modal(props) {
                   <img src={arrowhead} className="arrowright"></img>
                 </div>
 
-                {/* GST Breakdown */}
                 <div className="gst-breakdown justify-spacebetween">
                   <div className="gst-box">
                     <strong className="green">₹780</strong>
@@ -106,7 +99,10 @@ function Modal(props) {
                       </span>
                     </div>
                   </div>
-                  <img src={straightArrow} className="flex-column"></img>
+                  <img
+                    src={straightArrow}
+                    className="flex-column flippingarrow"
+                  ></img>
                   <div className="gst-wallet flex-column">
                     <div className="font-small">You Get</div>
                     <div className="green">
